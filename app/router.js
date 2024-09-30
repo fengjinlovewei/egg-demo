@@ -7,4 +7,5 @@ module.exports = app => {
   const report = app.middleware.report({ });
   router.get('/', report, controller.home.index);
   router.get('/news', report, controller.news.list);
+  router.get('/pdf', report, controller.pdf.get);
 };
